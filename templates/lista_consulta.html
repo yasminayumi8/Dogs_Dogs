@@ -1,0 +1,15 @@
+{% extends 'templates.html' %}
+
+{% block conteudo %}
+    {% for consulta in lista_consulta %}
+        <div class="card">
+            <p>{{consulta.motivo_id2}}</p>
+            <p>{{consulta.hora}}</p>
+            <p>{{consulta.minuto}}</p>
+            <p>{{consulta.data1}}</p>
+            <p>{{consulta.idVeterinario}}</p>
+            <p>{{consulta.idAnimal2}}</p>
+
+        </div>
+    {% endfor%}
+{% endblock %}

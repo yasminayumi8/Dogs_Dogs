@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/template.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><strong>Dogs & Dogs</strong></h1>
+    </header>
+    <nav>
+        <div class="menu">
+           <a href="{{ url_for('cadastro_animal') }}"> Cadastro do animal </a>
+        </div>
+        <div class="menu">
+            <a href="{{ url_for('cadastro_cliente') }}"> Cadastro do cliente</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('cadastro_consulta') }}"> Cadastro da consulta</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('cadastro_veterinario') }}"> Cadastro do veterinario</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('lista_veterinario') }}"> Lista veterinario</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('lista_animal') }}"> Lista animal</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('lista_cliente') }}"> Lista cliente</a>
+        </div>
+        <div class="menu">
+             <a href="{{ url_for('lista_consulta') }}"> Lista consulta</a>
+        </div>
+
+    </nav>
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+</div>
+</body>
+</html>

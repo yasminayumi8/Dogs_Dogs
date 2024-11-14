@@ -1,0 +1,12 @@
+{% extends 'templates.html' %}
+
+{% block conteudo %}
+    {% for animal in lista_animal %}
+        <div class="card">
+            <p>{{animal.nome_animal}}</p>
+            <p>{{animal.raca1}}</p>
+            <p>{{animal.anoNasci}}</p>
+            <p>{{animal.idCliente3}}</p>
+        </div>
+    {% endfor%}
+{% endblock %}

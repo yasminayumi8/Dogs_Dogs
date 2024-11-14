@@ -1,0 +1,20 @@
+{% extends 'templates.html' %}
+{% block conteudo %}
+<form action="{{ url_for('cadastro_consulta') }}" method="POST">
+    <label>Motivo da consulta : </label>
+    <input type="text" name="form_motivo_id2">
+    <label>Horario :</label>
+    <input type="text" name="form_hora">
+    <label>Minuto :</label>
+    <input type="text" name="form_minuto">
+    <label>Data :</label>
+    <input type="text" name="form_data1">
+    <label>ID do veterinario :</label>
+    <input type="text" name="form_idVeterinario">
+    <label>ID do animal :</label>
+    <input type="text" name="form_idAnimal2">
+    <hr>
+    <button>Adicionar</button>
+    <button><a href="{{ url_for('lista_consulta') }}">Cancelar</a></button>
+</form>
+{% endblock %}

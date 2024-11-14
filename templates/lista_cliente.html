@@ -1,0 +1,13 @@
+{% extends 'templates.html' %}
+
+{% block conteudo %}
+    {% for cliente in lista_cliente %}
+        <div class="card">
+            <p>{{cliente.CPF}}</p>
+            <p>{{cliente.Nome1}}</p>
+            <p>{{cliente.telefone}}</p>
+            <p>{{cliente.profissao}}</p>
+            <p>{{cliente.area}}</p>
+        </div>
+    {% endfor%}
+{% endblock %}

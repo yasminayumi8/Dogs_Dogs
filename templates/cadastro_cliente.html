@@ -1,0 +1,18 @@
+{% extends 'templates.html' %}
+{% block conteudo %}
+<form action="{{ url_for('cadastro_cliente') }}" method="POST">
+    <label>Nome do Cliente : </label>
+    <input type="text" name="form_Nome1">
+    <label>CPF do cliente :</label>
+    <input type="text" name="form_CPF">
+    <label>Telefone :</label>
+    <input type="text" name="form_telefone">
+    <label>Profissão :</label>
+    <input type="text" name="form_profissao">
+    <label>Área :</label>
+    <input type="text" name="form_area">
+    <hr>
+    <button>Adicionar</button>
+    <button><a href="{{ url_for('lista_cliente') }}">Cancelar</a></button>
+</form>
+{% endblock %}

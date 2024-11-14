@@ -1,0 +1,12 @@
+{% extends 'templates.html' %}
+
+{% block conteudo %}
+    {% for veterinario in lista_veterinario %}
+        <div class="card">
+            <p>{{veterinario.salario2}}</p>
+            <p>{{veterinario.nomeVet}}</p>
+            <p>{{veterinario.crmv}}</p>
+            <p>{{veterinario.v_consulta1}}</p>
+        </div>
+    {% endfor%}
+{% endblock %}
